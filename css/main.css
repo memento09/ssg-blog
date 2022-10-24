@@ -1,6 +1,6 @@
 /* Color customization */
 :root {
-  --primary: #1282f9;
+  --primary: #e7bf60;
   --primary-dark: #e7bf60;
 }
 
@@ -685,8 +685,10 @@ dt {
   }
 }
 html {
-  font-family: Inter UI, sans-serif;
-  --font-family: Inter UI, sans-serif;
+  /* font-family: Inter UI, sans-serif;
+  --font-family: Inter UI, sans-serif; */
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Sans", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  --font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Sans", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
