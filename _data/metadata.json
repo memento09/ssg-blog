@@ -1,8 +1,8 @@
 {
-  "title": "おめめのブログ",
+  "title": "おめめのメ！",
   "url": "https://update-me.com",
   "domain": "update-me.com",
-  "description": "ゲームとネコが中心のブログです",
+  "description": "猫の写真やゲームのレビューなどを中心とした個人ブログです",
   "genre": "Insert a schema.org genre",
   "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
   "sendWebVitals": false,
@@ -17,7 +17,7 @@
     "url": "https://update-me.com/feed/feed.json"
   },
   "author": {
-    "name": "おめめ",
+    "name": "©︎ 2022 おめめ",
     "twitterHandle": "@memento09"
   },
   "publisher": {
