@@ -232,7 +232,18 @@ html {
   font-style: oblique 0deg 10deg;
   src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
 }
-
+/* sawarabi-gothic-regular - latin_japanese */
+@font-face {
+  font-family: 'Sawarabi Gothic';
+  font-style: normal;
+  font-weight: 400;
+  /* src: url('../fonts/sawarabi-gothic-regular.eot'); */
+  src: local(''),
+       url('../fonts/sawarabi-gothic-regular.woff2') format('woff2');
+       /* url('../fonts/sawarabi-gothic-regular.woff') format('woff'),
+       url('../fonts/sawarabi-gothic-regular.ttf') format('truetype'),
+       url('../fonts/sawarabi-gothic-regular.svg#SawarabiGothic') format('svg'); */
+}
 /*
 
 The Bahunya CSS framework https://kimeiga.github.io/bahunya/
@@ -689,10 +700,8 @@ dt {
   }
 }
 html {
-  /* font-family: Inter UI, sans-serif;
-  --font-family: Inter UI, sans-serif; */
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Sans", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  --font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Sans", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: Sawarabi Gothic ,Inter UI, sans-serif;
+  --font-family: Sawarabi Gothic ,Inter UI, sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
