@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"
+<html lang="jp"
     domain="{{ metadata.domain }}"
     {% if googleanalytics %}
     ga-id="{{ googleanalytics }}"
@@ -44,6 +44,11 @@
 
     <link rel="preconnect" href="/" crossorigin>
     <link rel="preload" href="/fonts/Inter-3.19.var.woff2" as="font" type="font/woff2" crossorigin>
+    {# <link rel="preload" href="/fonts/sawarabi-gothic-regular.eot" as="font" type="font/eot" crossorigin>
+    <link rel="preload" href="/fonts/sawarabi-gothic-regular.svg" as="font" type="font/svg" crossorigin>
+    <link rel="preload" href="/fonts/sawarabi-gothic-regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/sawarabi-gothic-regular.woff" as="font" type="font/woff" crossorigin> #}
+    <link rel="preload" href="/fonts/sawarabi-gothic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <script async defer src="{{ "/js/min.js" | addHash }}"
       {% if webvitals %}data-cwv-src="{{ "/js/web-vitals.js" | addHash }}"{% endif %}>
     </script>

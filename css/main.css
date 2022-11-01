@@ -1,7 +1,7 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
-  --primary-dark: #e7bf60;
+  --primary: #e7bf60;
+  --primary-dark: #f9c412;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -232,7 +232,18 @@ html {
   font-style: oblique 0deg 10deg;
   src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
 }
-
+/* sawarabi-gothic-regular - latin_japanese */
+@font-face {
+  font-family: 'Sawarabi Gothic';
+  font-style: normal;
+  font-weight: 400;
+  /* src: url('../fonts/sawarabi-gothic-regular.eot'); */
+  src: local(''),
+       url('../fonts/sawarabi-gothic-regular.woff2') format('woff2');
+       /* url('../fonts/sawarabi-gothic-regular.woff') format('woff'),
+       url('../fonts/sawarabi-gothic-regular.ttf') format('truetype'),
+       url('../fonts/sawarabi-gothic-regular.svg#SawarabiGothic') format('svg'); */
+}
 /*
 
 The Bahunya CSS framework https://kimeiga.github.io/bahunya/
@@ -342,7 +353,8 @@ select {
 [type="reset"],
 [type="submit"],
 button {
-  -webkit-appearance: button;
+  /* -webkit-appearance: button; */
+  appearance: button;
 }
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -384,14 +396,17 @@ textarea {
   height: auto;
 }
 [type="search"] {
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
+  appearance: textfield;
   outline-offset: -2px;
 }
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
+  appearance: none;
 }
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
+  /* -webkit-appearance: button; */
+  appearance: button;
   font: inherit;
 }
 details {
@@ -543,7 +558,7 @@ ul {
 }
 @media (min-width: 1200px) {
   h1 {
-    font-size: 6.0756rem;
+    font-size: 5.5756rem;
     line-height: 6.72rem;
   }
   h1,
@@ -685,8 +700,8 @@ dt {
   }
 }
 html {
-  font-family: Inter UI, sans-serif;
-  --font-family: Inter UI, sans-serif;
+  font-family: Sawarabi Gothic ,Inter UI, sans-serif;
+  --font-family: Sawarabi Gothic ,Inter UI, sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
@@ -834,8 +849,10 @@ video {
 }
 body {
   font-family: var(--font-family);
-  background: #181818;
-  color: #eee;
+  /* background: #181818;
+  color: #eee; */
+  background: #eee;
+  color: #181818;
 }
 section {
   margin-left: auto;
@@ -1119,4 +1136,17 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+  a {
+    color: #e39777;
+  }
+  img {
+    filter: grayscale(30%);
+  }
 }
