@@ -1,20 +1,20 @@
 {
   "title": "おめめのメ！",
-  "url": "https://update-me.com",
-  "domain": "update-me.com",
+  "url": "https://omeme-no-me.com",
+  "domain": "omeme-no-me.com",
   "description": "猫の写真やゲームのレビューなどを中心とした個人ブログです",
-  "genre": "Insert a schema.org genre",
-  "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
+  "genre": "blog",
+  "googleAnalyticsId": "G-XPJZ40HQZ7",
   "sendWebVitals": false,
   "feed": {
     "subtitle": "方向性は走り出してから。",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://update-me.com"
+    "id": "https://omeme-no-me.com"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://update-me.com/feed/feed.json"
+    "url": "https://omeme-no-me.com/feed/feed.json"
   },
   "author": {
     "name": "おめめ ©︎ 2022. POWERED BY ELEVENTY.",
