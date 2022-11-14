@@ -97,6 +97,7 @@ const minifyHtml = (rawContent, outputPath) => {
       html5: true,
       decodeEntities: true,
       removeOptionalTags: true,
+      minifyJS: true,
     });
   }
   return content;
