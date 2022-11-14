@@ -6,8 +6,9 @@
     {% endif %}
   >
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleanalytics }}"></script>
+    {% if googleanalytics %}
+      <script async defer src="{{ "/js/gtag.js" | addHash }}"></script>
+    {% endif %}
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
