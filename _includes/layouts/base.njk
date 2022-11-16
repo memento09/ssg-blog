@@ -1,14 +1,10 @@
 <!doctype html>
-<html lang="jp"
+<html lang="ja"
     domain="{{ metadata.domain }}"
-    {% if googleanalytics %}
-    ga-id="{{ googleanalytics }}"
-    {% endif %}
-  >
+ >
   <head>
-    {% if googleanalytics %}
-      <script async defer src="{{ "/js/gtag.js" | addHash }}"></script>
-    {% endif %}
+    <!-- Google tag (gtag.js) -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id={{ googleanalytics }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
