@@ -1,10 +1,18 @@
 <!doctype html>
 <html lang="ja"
     domain="{{ metadata.domain }}"
+<<<<<<< HEAD
   >
   <head>
     <script async defer src="{{ "/js/gtag.js" | addHash }}"></script>
     <script csp-hash>
+=======
+ >
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id={{ googleanalytics }}"></script>
+    <script>
+>>>>>>> 7364aedc7ecb9a4cfd0020da2dbf556a98632601
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
