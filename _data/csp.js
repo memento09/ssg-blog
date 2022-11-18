@@ -40,15 +40,15 @@ const CSP = {
     ["script-src", SELF, /* Replaced by apply-csp.js plugin */ "HASHES"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
-    // Images may also come from data-URIs.
-    ["img-src", SELF, "data:"],
-    // 'https://analytics.google.com/' is allowd.
-    ["connect-src", SELF, 'https://analytics.google.com/']
-
+    // Images may also come from data-URIs and GoogleTagManager.
+    ["img-src", SELF, "https://www.google.co.jp/ads/", "https://www.googletagmanager.com/", "data:"],
+    
     // To add new rules, add new array literals here or extend those above with
     // additional allowed elements.
     // Example for allowing YouTube iframe embeds
     // ['frame-src', 'https://www.youtube.com/embed/']
+    ["connect-src", SELF, "https://analytics.google.com/", "https://static.cloudflareinsights.com/"],
+
   ]),
 };
 
