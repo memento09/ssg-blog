@@ -47,7 +47,7 @@ const CSP = {
     // additional allowed elements.
     // Example for allowing YouTube iframe embeds
     // ['frame-src', 'https://www.youtube.com/embed/']
-    ["connect-src", SELF, "https://analytics.google.com/", "*.cloudflareinsights.com"],
+    ["connect-src", SELF, "https://analytics.google.com/", "cloudflareinsights.com"],
 
   ]),
 };
