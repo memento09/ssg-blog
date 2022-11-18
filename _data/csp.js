@@ -37,7 +37,7 @@ const CSP = {
     ["object-src", quote("none")],
     // Script from same-origin and inline-hashes.
     // If you need to add an external host for scripts you need to add an item like 'https://code.jquery.com/jquery-3.6.0.slim.min.js' to this list.
-    ["script-src", SELF, /* Replaced by apply-csp.js plugin */ "HASHES", "*cloudflareinsights.com"],
+    ["script-src", SELF, /* Replaced by apply-csp.js plugin */ "HASHES", "https://static.cloudflareinsights.com/beacon.min.js"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs and GoogleTagManager.
@@ -47,7 +47,7 @@ const CSP = {
     // additional allowed elements.
     // Example for allowing YouTube iframe embeds
     // ['frame-src', 'https://www.youtube.com/embed/']
-    ["connect-src", SELF, "https://analytics.google.com/", "*cloudflareinsights.com"],
+    ["connect-src", SELF, "https://analytics.google.com/", "*.cloudflareinsights.com"],
 
   ]),
 };
