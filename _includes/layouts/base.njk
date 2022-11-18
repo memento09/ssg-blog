@@ -3,8 +3,7 @@
     domain="{{ metadata.domain }}"
   >
   <head>
-    <script async defer src="{{ "/js/gtag.js" | addHash }}" crossorigin="anonymous"></script>
-    <script async defer src="{{ "/js/beacon.min.js" | addHash }}"  crossorigin="anonymous"></script>
+    <script async defer src="{{ "/js/gtag.js" | addHash }}"></script>
     <script csp-hash>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
