@@ -227,12 +227,6 @@ html {
 }
 */
 @font-face {
-  font-family: "LINE Seed Sans_W";
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("/fonts/LINESeedSans_W_Rg.woff2") format("woff2");
-}
-@font-face {
   font-family: "LINE Seed JP_OTF";
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
