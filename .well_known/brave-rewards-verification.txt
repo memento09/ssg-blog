@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: omeme-no-me.com
+Token: bb6db77d5a8188619d5224d153442e8a8d8ade6611ba9f017e310a2c38aee3c0
