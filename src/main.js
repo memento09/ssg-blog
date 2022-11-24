@@ -180,6 +180,7 @@ addEventListener(
     if (!button) {
       return;
     }
+    gtag('event', button.getAttribute("href"));
     // ga("send", {
     //   hitType: "event",
     //   eventCategory: "button",

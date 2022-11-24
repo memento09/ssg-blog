@@ -55,6 +55,7 @@ share-widget div {
   background-image: url("/img/share.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 10px;
 }
 
 .apple share-widget div {
@@ -515,7 +516,7 @@ pre,
 ul {
   margin-bottom: 1.36rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 520px) {
   h1 {
     font-size: 4.3978rem;
     line-height: 4.4rem;
@@ -564,7 +565,7 @@ ul {
     margin-bottom: 1.496rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   h1 {
     font-size: 5.5756rem;
     line-height: 6.72rem;
@@ -708,8 +709,8 @@ dt {
   }
 }
 html {
-  font-family: LINE Seed Sans ,LINE Seed JP_OTF , sans-serif;
-  --font-family: LINE Seed Sans ,LINE Seed JP_OTF , sans-serif;
+  font-family: LINE Seed JP_OTF , sans-serif;
+  --font-family: LINE Seed JP_OTF , sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
