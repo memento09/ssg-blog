@@ -68,7 +68,7 @@ describe("check build output for a generic post", () => {
       let has_ga_id = GA_ID ? 1 : 0;
       expect(scripts).to.have.length(has_ga_id + 1); // NOTE: update this when adding more <script>
       expect(scripts[0].getAttribute("src")).to.match(
-        /^\/js\/gtag\.js\?hash=\w+/
+        /G-XPJZ40HQZ7$/
       );
     });
 
