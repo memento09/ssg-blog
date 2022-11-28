@@ -1,7 +1,7 @@
 /* Color customization */
 :root {
-  --primary: #e7bf60;
-  --primary-dark: #f9c412;
+  --primary: #004986;
+  --primary-dark: #0085f2;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -100,7 +100,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--primary);
+  background-color: #e7bf60;
   width: 100vw;
   position: absolute;
   left: 0;
@@ -234,25 +234,6 @@ html {
   src: url("/fonts/LINESeedJP_OTF_Rg.woff2") format("woff2");
 }
 
-/* @font-face {
-  font-family: "Inter UI";
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
-} */
-
-/* sawarabi-gothic-regular - latin_japanese */
-/* @font-face {
-  font-family: 'Sawarabi Gothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/sawarabi-gothic-regular.eot');
-  src: local(''),
-       url('../fonts/sawarabi-gothic-regular.woff2') format('woff2')
-       url('../fonts/sawarabi-gothic-regular.woff') format('woff'),
-       url('../fonts/sawarabi-gothic-regular.ttf') format('truetype'),
-       url('../fonts/sawarabi-gothic-regular.svg#SawarabiGothic') format('svg');
-} */
 /*
 
 The Bahunya CSS framework https://kimeiga.github.io/bahunya/
@@ -860,7 +841,7 @@ body {
   font-family: var(--font-family);
   /* background: #181818;
   color: #eee; */
-  background: #eee;
+  background: #fff;
   color: #181818;
 }
 section {
@@ -948,7 +929,7 @@ main {
   border-top: 0.5px solid #ccc;
 }
 footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: #e2e2e2;
   color: #fff;
   padding: 3em;
   text-align: center;
@@ -1119,12 +1100,12 @@ pre[class*="language-"] {
 input[type="submit"],
 button[type="submit"],
 button:not([disabled]) {
-  background: var(--primary);
+  background: #f9c412;
 }
 input[type="submit"]:hover,
 button[type="submit"]:hover,
 button:not([disabled]):hover {
-  background: var(--primary-dark);
+  background: #e7bf60;
 }
 
 dd + dt {
@@ -1136,7 +1117,7 @@ blockquote {
 }
 
 mark {
-  background: var(--primary);
+  background: #f9c412;
 }
 
 a {
@@ -1144,16 +1125,20 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary);
+  background: #f9c412;
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #f9c412;
+    --primary-dark: #e7bf60;
+  }
   body {
-    background-color: #444;
+    background-color: #181818;
     color: #e4e4e4;
   }
-  a {
-    color: #e39777;
+  footer {
+    background: rgba(0, 0, 0, 0.8);
   }
   img {
     filter: grayscale(30%);
