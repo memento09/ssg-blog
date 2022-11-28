@@ -3,8 +3,9 @@
     domain="{{ metadata.domain }}"
   >
   <head>
-    <script async defer src="{{ "/js/gtag.js" | addHash }}"></script>
-    <script csp-hash>
+    {# <script async defer src="{{ "/js/gtag.js" | addHash }}"></script> #}
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id={{ googleanalytics}}"></script>
+    <script async defer csp-hash>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -17,7 +18,9 @@
     {% if isdevelopment %}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     {% else %}
-    <link rel="icon" href="{{ '/img/favicon/favicon-192x192.png' | addHash }}" type="image/png">
+    <link rel="icon" href="{{ '/img/favicon/favicon.ico' | addHash }}">
+    <link rel="icon" href="{{ '/img/favicon/favicon.svg' | addHash }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ '/img/favicon/apple-touch-icon.png' | addHash }}">
     {% endif %}
     <meta name="theme-color" content="#f9c412">
     <meta name="robots" content="max-snippet:-1, max-image-preview: large, max-video-preview: -1">
@@ -49,7 +52,7 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
     <link rel="preconnect" href="/" crossorigin>
-    <link rel="preload" href="/fonts/LINESeedJP_OTF_Rg.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/fonts/LINESeedJP_OTF_Rg.woff2" type="font/woff2" crossorigin>
     <script async defer src="{{ "/js/min.js" | addHash }}"
       {% if webvitals %}data-cwv-src="{{ "/js/web-vitals.js" | addHash }}"{% endif %}>
     </script>
