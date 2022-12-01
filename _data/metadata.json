@@ -5,6 +5,7 @@
   "description": "猫の写真やゲームのレビューなどを中心とした個人ブログです",
   "genre": "blog",
   "googleAnalyticsId": "G-XPJZ40HQZ7",
+  "googlePropertyId" : "340974885",
   "sendWebVitals": false,
   "feed": {
     "subtitle": "方向性は走り出してから。",
