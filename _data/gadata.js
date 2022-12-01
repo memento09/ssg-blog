@@ -1,5 +1,8 @@
 'use strict';
 
+// Setting the aplication Credentials.
+require('dotenv').config();
+
 const metadata = require("./metadata.json");
 const propertyId = metadata.googlePropertyId;
 
