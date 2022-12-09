@@ -47,8 +47,5 @@ module.exports = async function () {
   });
 
   // console.log('Report result:');
-  response.rows.forEach(row => {
-    // console.log(`${propertyId}, ${row.metricValues[0].value}`);
-    return row.metricValues[0].value;
-  });
+  return response.rows[0].metricValues[0].value;
 };
