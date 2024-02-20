@@ -16,7 +16,3 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
-
-      ## Authenticate to Google Cloud from GitHub Actions via Workload Identity Federation or service account keys
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v2.1.1
