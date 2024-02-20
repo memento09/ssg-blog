@@ -63,7 +63,7 @@
     "liquidjs": "^10.4.0",
     "lru-cache": "^5.1.1",
     "mocha": "^10.1.0",
-    "phin": "^3.5.0",
+    "phin": "^3.7.0",
     "purge-from-html": "^1.0.3",
     "purgecss": "^4.0.3",
     "qs": "^6.2.4",
