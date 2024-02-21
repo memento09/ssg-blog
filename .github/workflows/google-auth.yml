@@ -1,0 +1,26 @@
+jobs:
+  job_id:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    - uses: 'google-github-actions/auth@v2'
+      with:
+        project_id: 'gareport-1669882853272'
+        workload_identity_provider: 'projects/378977059876/locations/global/workloadIdentityPools/github-connect/subject/SUBJECT_ATTRIBUTE_VALUE'
+    #  service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
+
+    # NOTE: 'steps.auth.outputs.auth_token' will be a federated authentication
+    # token, it does not correspond to the service account. To get a token for
+    # the service account, specify the 'token_format' parameter and use the
+    # 'accesss_token' output.
+    #
+    # - uses: 'google-github-actions/auth@v2'
+    #   with:
+    #     workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+    #     service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
+    #     token_format: 'access_token'
+    #
+    # - run: |-
+    #   curl -H 'Bearer: ${{ steps.auth.outputs.access_token }}' https://...
+    #
