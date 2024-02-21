@@ -6,3 +6,5 @@ js/min.js.map
 .vscode/
 .netlify/
 export
+# Ignore generated credentials from google-github-actions/auth
+gha-creds-*.json
