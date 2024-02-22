@@ -17,7 +17,7 @@ jobs:
       uses: google-github-actions/auth@v2
       with:
         project_id: 'gareport-1669882853272'
-        workload_identity_provider: 'projects/378977059876/locations/global/workloadIdentityPools/github-connect/subject/SUBJECT_ATTRIBUTE_VALUE'
+        workload_identity_provider: 'projects/378977059876/locations/global/workloadIdentityPools/github-connect/providers/github'
     #  service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
 
     # NOTE: 'steps.auth.outputs.auth_token' will be a federated authentication
