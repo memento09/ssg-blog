@@ -59,7 +59,7 @@
     "hasha": "^5.2.0",
     "html-minifier": "^4.0.0",
     "image-size": "^1.1.1",
-    "jimp": "^0.16.2",
+    "jimp": "^0.22.12",
     "liquidjs": "^10.5.0",
     "lru-cache": "^10.2.0",
     "mocha": "^10.1.0",
