@@ -40,12 +40,12 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { DateTime } from "luxon";
-import { promisify } from "util";
-import fs from "fs";
-import path from "path";
-import hasha from "hasha";
-import touch from "touch";
+const { DateTime } = require("luxon");
+const { promisify } = require("util");
+const fs = require("fs");
+const path = require("path");
+const hasha = require("hasha");
+const touch = require("touch");
 const readFile = promisify(fs.readFile);
 const readdir = promisify(fs.readdir);
 const stat = promisify(fs.stat);
