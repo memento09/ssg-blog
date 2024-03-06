@@ -40,23 +40,23 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { DateTime } = import("luxon");
-const { promisify } = import("util");
-const fs = import("fs");
-const path = import("path");
-const hasha = import("hasha");
-const touch = import("touch");
+const { DateTime } = require("luxon");
+const { promisify } = require("util");
+const fs = require("fs");
+const path = require("path");
+const hasha = require("hasha");
+const touch = require("touch");
 const readFile = promisify(fs.readFile);
 const readdir = promisify(fs.readdir);
 const stat = promisify(fs.stat);
-const execFile = promisify(import("child_process").execFile);
+const execFile = promisify(require("child_process").execFile);
 const pluginRss = import("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = import("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = import("@11ty/eleventy-navigation");
-const markdownIt = import("markdown-it");
-const markdownItAnchor = import("markdown-it-anchor");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 const localImages = import("./third_party/eleventy-plugin-local-images/.eleventy.js");
-const CleanCSS = import("clean-css");
+const CleanCSS = require("clean-css");
 const GA_ID = import("./_data/metadata.json").googleAnalyticsId;
 const { cspDevMiddleware } = import("./_11ty/apply-csp.js");
 
@@ -174,7 +174,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByTag("posts");
   });
-  eleventyConfig.addCollection("tagList", import("./_11ty/getTagList"));
+  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   // We need to copy cached.js only if GA is used
