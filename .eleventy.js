@@ -40,25 +40,25 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-const { DateTime } = require("luxon");
-const { promisify } = require("util");
-const fs = require("fs");
-const path = require("path");
-const hasha = require("hasha");
-const touch = require("touch");
+import { DateTime } from "luxon";
+import { promisify } from "util";
+import fs from "fs";
+import path from "path";
+import hasha from "hasha";
+import touch from "touch";
 const readFile = promisify(fs.readFile);
 const readdir = promisify(fs.readdir);
 const stat = promisify(fs.stat);
 const execFile = promisify(require("child_process").execFile);
-const pluginRss = import("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = import("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = import("@11ty/eleventy-navigation");
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginNavigation from "@11ty/eleventy-navigation";
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const localImages = import("./third_party/eleventy-plugin-local-images/.eleventy.js");
+import localImages from "./third_party/eleventy-plugin-local-images/.eleventy.js";
 const CleanCSS = require("clean-css");
-const GA_ID = import("./_data/metadata.json").googleAnalyticsId;
-const { cspDevMiddleware } = import("./_11ty/apply-csp.js");
+const GA_ID = require("./_data/metadata.json").googleAnalyticsId;
+const { cspDevMiddleware } = require("./_11ty/apply-csp.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
