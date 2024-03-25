@@ -60,7 +60,7 @@
     "html-minifier": "^4.0.0",
     "image-size": "^1.1.1",
     "jimp": "^0.22.12",
-    "liquidjs": "^10.5.0",
+    "liquidjs": "^10.10.2",
     "lru-cache": "^10.2.0",
     "mocha": "^10.3.0",
     "phin": "^3.7.0",
