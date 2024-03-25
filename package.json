@@ -73,6 +73,6 @@
     "terser": "^5.29.2",
     "touch": "^3.1.0",
     "twitter": "^1.7.1",
-    "ua-parser-js": "^1.0.33"
+    "ua-parser-js": "^1.0.37"
   }
 }
