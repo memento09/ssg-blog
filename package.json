@@ -70,7 +70,7 @@
     "querystring": "^0.2.1",
     "rollup": "^2.79.1",
     "sharp": "^0.33.4",
-    "terser": "^5.31.2",
+    "terser": "^5.31.3",
     "touch": "^3.1.1",
     "twitter": "^1.7.1",
     "ua-parser-js": "^1.0.38"
