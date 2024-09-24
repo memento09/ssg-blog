@@ -61,7 +61,7 @@
     "image-size": "^1.1.1",
     "jimp": "^1.6.0",
     "liquidjs": "^10.14.0",
-    "lru-cache": "^11.0.0",
+    "lru-cache": "^11.0.1",
     "mocha": "^10.6.0",
     "phin": "^4.0.0",
     "purge-from-html": "^1.0.3",
